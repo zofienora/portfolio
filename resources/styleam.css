@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;;
+}
+
+main {
+    background-color: #ebe9e1;
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #ebe9e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+nav p {
+    padding-left: 5%;
+    font-family: "Vollkorn", serif!important;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color:#e43d12;
+}
+
+nav .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    padding-right: 5%;
+    
+}
+
+nav li {
+    margin: 0 1rem;
+  }
+
+a {
+    color: inherit; /* Inherits the text color from the parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: #e43d12;
+}
+
+/* Main Description */
+
+.main-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding-bottom: 400px;
+    z-index: 1;
+}
+
+.main-me h1 {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5rem;
+    color:#e43d12;
+}
+
+.main-me p {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 120%;
+}
+
+.sophie {
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 1042px;
+    opacity: 1;
+
+}
+
