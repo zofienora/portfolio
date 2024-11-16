@@ -1,0 +1,128 @@
+/* 
+Some Font and Color things here
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+.vollkorn-<uniquifier> {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/ 
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;;
+}
+
+main {
+    background-color: #ebe9e1;
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #ebe9e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+nav p {
+    padding-left: 5%;
+    font-family: "Vollkorn", serif!important;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color:#e43d12;
+}
+
+nav .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    padding-right: 5%;
+    
+}
+
+nav li {
+    margin: 0 1rem;
+  }
+
+a {
+    color: inherit; /* Inherits the text color from the parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: #e43d12;
+}
+
+/* Main Description */
+
+.main-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-bottom: 400px;
+}
+
+.main-me h1 {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5rem;
+    color:#e43d12;
+}
+
+.main-me p {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 120%;
+}
+
+.airport {
+    height: 30px;
+}
+
