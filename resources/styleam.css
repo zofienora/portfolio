@@ -72,40 +72,35 @@ a:hover {
 
 /* Main Description */
 
-.main-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    padding-bottom: 400px;
-    z-index: 1;
+.aboutme {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 80%;
+    transform: translateY(-40%); /* Negative values move the div higher */
+    padding-left: 10%;;
+    
+}
+
+.main-me { 
+    grid-area: 1 / 1 / 4 / 2; 
 }
 
 .main-me h1 {
     font-family: "Vollkorn", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 5rem;
     color:#ea322b;
+    font-size: 4rem;
 }
 
 .main-me p {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
     font-size: 1.5rem;
-    line-height: 120%;
 }
 
-.sophie {
+.sophie { 
+    grid-area: 1 / 2 / 4 / 3; 
     height: 800px;
-    object-fit: cover;
-    position: absolute;
-    top: 1042px;
-    opacity: 1;
-
 }
 
