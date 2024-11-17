@@ -43,7 +43,7 @@ nav p {
     font-weight: 900;
     font-style: italic;
     font-size: 3rem;
-    color:#e43d12;
+    color:#ea322b;
 }
 
 nav .navigation {
@@ -67,7 +67,7 @@ a {
 }
 
 a:hover {
-    color: #e43d12;
+    color: #ea322b;
 }
 
 /* Main Description */
@@ -88,7 +88,7 @@ a:hover {
     font-weight: 800;
     font-style: italic;
     font-size: 5rem;
-    color:#e43d12;
+    color:#ea322b;
 }
 
 .main-me p {
