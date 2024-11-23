@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+ 
+    
+}
+
+html {
+    font-size: 16px;
+}
+
+main {
+    background-color: #ebe9e1;
+    width: 100%;
+    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    height: auto;      /* Allows the content to grow beyond the min-height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #ebe9e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+nav p {
+    padding-left: 5%;
+    font-family: "Vollkorn", serif!important;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color:#ea322b;
+}
+
+nav .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    padding-right: 5%;
+    
+}
+
+nav li {
+    margin: 0 1rem;
+  }
+
+a {
+    color: inherit; /* Inherits the text color from the parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: #ea322b;
+}
+
+/* MAIN */
+
+
+
+/* GRID PROJECTS */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioh1 {
+    size: 5rem;
+    padding: 100px;
+    font-family: "Vollkorn", serif!important;
+    font-style: italic;
+
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 80%;
+    font-family: "Raleway", sans-serif;
+}
+
+.grid-parent .project p {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+
+
+.tree { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.portfolio { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.architect { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+
+.four { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.five { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.six { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+
+.seven { 
+    grid-area: 3 / 1 / 4 / 2; 
+}
+
+.eight { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+
+.nine { 
+    grid-area: 3 / 3 / 4 / 4; 
+}
+
+/* CARD */
+
+ main .grid-parent .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+main .grid-parent .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  main .grid-parent .container {
+    padding: 2px 16px;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  main .grid-parent .card img {
+    display: block; /* Removes extra space caused by inline elements */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Optional: Limit maximum height */
+    object-fit: cover; /* Ensures images cover the defined size */
+  }
