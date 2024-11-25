@@ -9,6 +9,8 @@
 
 html {
     font-size: 15px; /* Default root size */
+    font-size: 100%; /* Defaults to 16px */
+
 }
 
 body {
@@ -76,23 +78,23 @@ main {
   }
   
   .circle.one {
-    width: 900px;
-    height: 900px;
+    width: 30vw; /* 30% of viewport width */
+    height: 30vw;
     top: 0%;
     left: 0%;
   }
   
   .circle.two {
-    width: 750px;
-    height: 450px;
+    width: 30vw; /* 30% of viewport width */
+    height: 30vw;
     top: 10%;
     left: 70%;
     transform: rotate(30deg);
   }
   
   .circle.three {
-    width: 550px;
-    height: 550px;
+    width: 30vw; /* 30% of viewport width */
+    height: 30vw;
     top: 60%;
     left: 55%;
     transform: rotate(180deg);
