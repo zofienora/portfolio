@@ -1,28 +1,58 @@
 
-* {
+/* Enhanced CSS Reset */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
- 
-    
+    box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
+    font-size: 12px; /* Default root size */
+    font-size: 100%;
+
 }
 
-main {
-    background-color: #ebe9e1;
-    width: 100%;
-    min-height: 100vh; /* Minimum height of 100% of the viewport height */
-    height: auto;      /* Allows the content to grow beyond the min-height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    line-height: 1.5;
+    color: #333;
+    background: #ebe9e1;
 }
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+ol, ul, menu {
+    list-style: none;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------- */
 
 
 
 /* NAVIGATION BAR */
+
 
 nav {
     background-color: #ebe9e1;
@@ -30,15 +60,15 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
     font-family: "Raleway", sans-serif;
-    font-weight: 200;
+    font-weight: 500;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 nav p {
@@ -76,21 +106,40 @@ a:hover {
 
 /* MAIN */
 
-
+main {
+    background-color: #ebe9e1;
+    width: 100%;
+    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    height: auto;      /* Allows the content to grow beyond the min-height */
+    display: flex;
+    
+}
 
 /* GRID PROJECTS */
 
-main {
-    display: flex;
-    flex-direction: column;
+.grid-wrapper {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* Ensures it takes up full viewport height */
+    width: 100%; /* Full width */
+    background-color: #ebe9e1; /* Match your page's background */
+}
+
+.portfolio-header {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensures text aligns centrally */
+    background-color: #ebe9e1; /* Match your page's background */
 }
 
 .portfolioh1 {
-    size: 5rem;
-    padding: 100px;
     font-family: "Vollkorn", serif!important;
     font-style: italic;
-
+    font-size: 4rem;
+    color: #ea322b;
+    margin-top: 10%;
 }
 
 .grid-parent {
@@ -101,10 +150,11 @@ main {
     grid-row-gap: 0px;
     width: 80%;
     font-family: "Raleway", sans-serif;
+    
 }
 
 .grid-parent .project p {
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-family: "Raleway", sans-serif;
 }
 

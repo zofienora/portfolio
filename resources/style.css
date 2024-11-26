@@ -8,13 +8,12 @@
 }
 
 html {
-    font-size: 15px; /* Default root size */
-    font-size: 100%; /* Defaults to 16px */
+    font-size: 12px; /* Default root size */
+    font-size: 100%;
 
 }
 
 body {
-    font-size: 1rem;
     line-height: 1.5;
     color: #333;
     background: #ebe9e1;
@@ -80,7 +79,7 @@ main {
   .circle.one {
     width: 30vw; /* 30% of viewport width */
     height: 30vw;
-    top: 0%;
+    top: 30%;
     left: 0%;
   }
   
@@ -109,15 +108,15 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
     font-family: "Raleway", sans-serif;
-    font-weight: 200;
+    font-weight: 500;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 nav p {
@@ -161,8 +160,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 60%;
-    padding-bottom: 400px;
     z-index: 2;
+    padding-bottom: 15%;
 }
 
 .main-me h1 {
@@ -170,7 +169,7 @@ a:hover {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: italic;
-    font-size: 5rem;
+    font-size: 4rem;
     color:#ea322b;
 }
 
@@ -179,7 +178,6 @@ a:hover {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-size: 2rem;
-    line-height: 120%;
+    font-size: 1.5rem;
     text-align: center;
 }
